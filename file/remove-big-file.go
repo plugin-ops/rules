@@ -1,17 +1,16 @@
-//rule_name := "remove big file"
-//rule_version := 1.0
-//rule_description := "脚本将自动删除指定目录中所有空间占用大于指定大小的文件, 不会删除文件夹"
-//rule_rely_on := map[string]string{
-//"Info":"path-info",
-//"File":"file",
-//}
-//rule_params := map[string]string{
-//"Path":"",
-//"Size":0,
-//}
-//
-////--body--
-package main
+rule_name := "remove big file"
+rule_version := 1.0
+rule_description := "脚本将自动删除指定目录中所有空间占用大于指定大小的文件, 不会删除文件夹"
+rule_rely_on := map[string]string{
+"Info":"path-info",
+"File":"file",
+}
+rule_params := map[string]string{
+"Path":"",
+"Size":0,
+}
+
+//--body--
 
 import (
 	"action"
