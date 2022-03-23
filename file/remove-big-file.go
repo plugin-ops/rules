@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-	path := value.Path
+	path := value.Path.String()
 	if path == "" {
 		return
 	}
